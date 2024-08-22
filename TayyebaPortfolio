@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tayyeba Noor Siddiqui - Software Engineer Portfolio">
+    <title>Software Engineer | Tayyeba Noor Siddiqui</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            color: #0073e6;
+        }
+
+        .section p {
+            line-height: 1.6;
+        }
+
+        .portfolio-item {
+            margin-bottom: 2rem;
+        }
+
+        .portfolio-item h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            font-size: 1rem;
+            color: #0073e6;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            background-color: white;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tayyeba Noor Siddiqui</h1>
+    <p>Software Engineer</p>
+</header>
+
+<div class="container">
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Tayyeba Noor Siddiqui, a passionate Software Engineer with expertise in various programming languages, 
+            database management, and creative skills such as calligraphy and sketching. With a background in IT 
+            and experience in teaching, I enjoy solving complex problems and creating meaningful software solutions.
+        </p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>Project 1: Web Development</h3>
+                <p>A responsive website built using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 2: Data Management System</h3>
+                <p>Designed a database-driven system for a hospital management application.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 3: Teaching Assistant Application</h3>
+                <p>A software tool to assist teachers with grading, assignments, and student records.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to contact me via email or phone.</p>
+        <p class="contact-info">
+            Email: <a href="mailto:tayyyabasiddiqui2398@gmail.com">tayyyabasiddiqui2398@gmail.com</a><br>
+            Phone: <a href="tel:+923320352099">+92 332 0352099</a>
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Tayyeba Noor Siddiqui | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
