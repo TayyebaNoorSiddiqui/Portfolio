@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAE1DF; /* Pale pink background */
+    margin: 0;
+    color: #546A7B;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #9EA3B0; /* Muted grey */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #62929E; /* Muted Teal */
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #C6C5B9; /* Warm beige */
+}
+
+/* Sections */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    color: #546A7B; /* Slate Blue */
+}
+
+button a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px 20px;
+    background-color: #62929E;
+    border-radius: 30px;
+}
+
+button a:hover {
+    background-color: #FAE1DF;
+}
+
+/* Experience and Skills Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #546A7B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
