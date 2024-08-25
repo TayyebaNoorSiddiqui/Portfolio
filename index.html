@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tayyaba Noor Siddiqui - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional Styling for active section highlighting */
+        nav ul li a.active {
+            background-color: #546a7b; /* Highlight color when active */
+            color: white;
+            border-radius: 25px;
+        }
+    </style>
 </head>
 <body>
 
@@ -12,11 +18,12 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -51,6 +58,19 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>I have worked on several exciting projects throughout my career that showcase my technical expertise and creative problem-solving. Here are a few highlights:</p>
+            <ul>
+                <li><strong>Project 1: Online Learning Platform</strong> - Developed a dynamic learning platform for educational institutions, integrating video lessons, quizzes, and a progress tracking system.</li>
+                <li><strong>Project 2: E-commerce Website</strong> - Built a user-friendly e-commerce platform from scratch, incorporating secure payment gateways, real-time product updates, and inventory management.</li>
+                <li><strong>Project 3: Task Management App</strong> - Created an intuitive task management application with real-time collaboration features, helping teams stay productive and organized.</li>
+            </ul>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
         <div class="container">
@@ -78,5 +98,27 @@
         <p>© 2024 Tayyaba Noor Siddiqui - All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript for navbar highlight -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.pageYOffset >= sectionTop - 50) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
